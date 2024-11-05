@@ -2,5 +2,8 @@
 @import '../node_modules/sass-extras/index';
 
 @import './reset';
+@import './variables';
+@import './mixin';
+@import './fonts';
 @import './global';
 @import './_components/index';

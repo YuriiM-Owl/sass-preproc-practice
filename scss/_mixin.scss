@@ -1,0 +1,32 @@
+@mixin font-params(
+  $family,
+  $size,
+  $weight,
+  $letter-spacing: normal,
+  $line-height: normal
+) {
+  font: {
+    family: $family;
+    size: $size;
+    weight: $weight;
+  }
+  letter-spacing: $letter-spacing;
+  line-height: $line-height;
+}
+
+@mixin font_face(
+  $family,
+  $url,
+  $weight: normal,
+  $style: normal,
+  $display: swap
+) {
+  @font-face {
+    font-family: $family;
+    src: url('../fonts/' + $url + '.woff2') format('woff2'),
+      url('../fonts/' + $url + '.woff') format('woff');
+    font-weight: $weight;
+    font-style: $style;
+    font-display: $display;
+  }
+}

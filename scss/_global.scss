@@ -19,3 +19,21 @@
   flex-direction: row;
   letter-spacing: -0.01em;
 }
+
+%comment-text {
+  @include font-params($ff-inter, 20px, 400);
+}
+
+.main-title {
+  @include font-params($ff-urbanist, 96px, 600);
+}
+
+.section-title {
+  @include font-params($ff-lufga, 64px, 500);
+}
+
+.blog {
+  &__card-info {
+    @extend %comment-text;
+  }
+}

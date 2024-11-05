@@ -54,6 +54,76 @@ address {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lufga";
+  src: url("../fonts/Lufga-Regular.woff2") format("woff2"), url("../fonts/Lufga-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lufga";
+  src: url("../fonts/Lufga-Bold.woff2") format("woff2"), url("../fonts/Lufga-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lufga";
+  src: url("../fonts/Lufga-Light.woff2") format("woff2"), url("../fonts/Lufga-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lufga";
+  src: url("../fonts/Lufga-Medium.woff2") format("woff2"), url("../fonts/Lufga-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lufga";
+  src: url("../fonts/Lufga-SemiBold.woff2") format("woff2"), url("../fonts/Lufga-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Urbanist";
+  src: url("../fonts/Urbanist-Regular.woff2") format("woff2"), url("../fonts/Urbanist-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Urbanist";
+  src: url("../fonts/Urbanist-Bold.woff2") format("woff2"), url("../fonts/Urbanist-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Urbanist";
+  src: url("../fonts/Urbanist-Medium.woff2") format("woff2"), url("../fonts/Urbanist-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Urbanist";
+  src: url("../fonts/Urbanist-SemiBold.woff2") format("woff2"), url("../fonts/Urbanist-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
 .header__container {
   margin: 0 auto;
 }
@@ -87,6 +157,30 @@ address {
       -ms-flex-direction: row;
           flex-direction: row;
   letter-spacing: -0.01em;
+}
+
+.blog__card-info {
+  font-family: "Inter", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.main-title {
+  font-family: "Urbanist", "Arial", sans-serif;
+  font-size: 96px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.section-title {
+  font-family: "Lufga", "Arial", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: normal;
 }
 
 /*HEADER-START*/
