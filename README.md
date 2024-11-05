@@ -6,7 +6,7 @@ Study repository for group SASS practice.
 
 https://www.figma.com/design/31AoahhiylwYyvJ2ZKDKGB/Portfolio---Product-Designer-Portfolio-Website-(Community)-(Copy)?node-id=0-1&t=l4TsQCqeVEteHX1i-1
 
-# main info links
+# main info links (стисла інфомація по базам SASS)
 
 https://sass-lang.com/install/
 
@@ -16,7 +16,7 @@ https://habr.com/ru/articles/490754/#plugins (плагін для роботи �
 
 https://w3schoolsua.github.io/sass/index.html#gsc.tab=0 (стисла документація)
 
-# expanded info links
+# expanded info links (розширена документація по SASS)
 
 https://sass-lang.com/
 https://sass-guidelin.es/ (https://sass-guidelin.es/ru/#section)
@@ -24,8 +24,12 @@ https://css-tricks.com/sass-style-guide/
 
 ---
 
-#BEM
+# BEM
 https://en.bem.info/methodology/ (https://ru.bem.info/methodology/)
+
+https://getbem.com/naming/
+
+https://avivi.pro/ua/blog/metodologiya-bem-v-deystvii/
 
 https://habr.com/ru/articles/305548/ (корисна стаття по БЕМ)
 
