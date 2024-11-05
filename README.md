@@ -24,7 +24,7 @@ https://css-tricks.com/sass-style-guide/
 
 ---
 
-# BEM
+# BEM (методолігія для назв класів)
 https://en.bem.info/methodology/ (https://ru.bem.info/methodology/)
 
 https://getbem.com/naming/
