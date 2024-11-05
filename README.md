@@ -36,4 +36,5 @@ https://habr.com/ru/articles/305548/ (корисна стаття по БЕМ)
 Більш короткий, але й менш детальний гайд по БЕМ https://nicothin.pro/idiomatic-pre-CSS/
 
 # USEFUL and etc.
+https://github.com/nicothin/idiomatic-pre-CSS/blob/gh-pages/words_and_abbreviations.md (підбірка найбільш вживаних слів для найменування класів)
 https://github.com/yoksel/common-words (підбірка найбільш вживаних слів для найменування класів)
