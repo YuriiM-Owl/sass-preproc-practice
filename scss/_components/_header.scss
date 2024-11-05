@@ -1,0 +1,29 @@
+/*HEADER-START*/
+.header {
+  &__container {
+    @extend %container-params;
+  }
+  &__nav {
+    background-color: #171717;
+    border-radius: 50px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+  }
+  &__btn-link {
+    @extend %btn;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    background-color: transparent;
+    &--accent {
+      font-weight: 700;
+      background-color: #fd853a;
+    }
+  }
+}
+/*HEADER-END*/
