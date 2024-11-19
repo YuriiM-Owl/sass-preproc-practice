@@ -149,28 +149,40 @@ address {
   letter-spacing: -0.01em;
 }
 
-.blog__card-info {
-  font-family: "Inter", "Arial", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: normal;
-  line-height: normal;
-}
-
 .main-title {
   font-family: "Urbanist", "Arial", sans-serif;
-  font-size: 96px;
+  font-size: 48px;
   font-weight: 600;
-  letter-spacing: normal;
-  line-height: normal;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+@media (min-width: 768px) {
+  .main-title {
+    font-size: 64px;
+  }
+}
+@media (min-width: 1440px) {
+  .main-title {
+    font-size: 95px;
+  }
 }
 
 .section-title {
   font-family: "Lufga", "Arial", sans-serif;
-  font-size: 64px;
+  font-size: 32px;
   font-weight: 500;
-  letter-spacing: normal;
-  line-height: normal;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 48px;
+  }
+}
+@media (min-width: 1440px) {
+  .section-title {
+    font-size: 64px;
+  }
 }
 
 .test-map-use {
