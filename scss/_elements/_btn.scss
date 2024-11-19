@@ -1,0 +1,10 @@
+@use 'variables-btn';
+@use 'variables-link';
+
+.btn-primary {
+  background-color: variables-btn.$primary;
+}
+
+.btn-primary {
+  background-color: variables-link.$primary;
+}

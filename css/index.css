@@ -3,8 +3,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -143,19 +142,10 @@ address {
 .header__btn-link {
   border-radius: 60px;
   padding: 20px 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   letter-spacing: -0.01em;
 }
 
@@ -183,21 +173,76 @@ address {
   line-height: normal;
 }
 
+.test-map-use {
+  background-color: #040404;
+}
+
+.test-map-use-02 {
+  background-color: #e7e7e7;
+}
+
+.test-if {
+  color: red;
+}
+
+p {
+  color: blue;
+}
+
+.title-hero {
+  font-size: 64px;
+  font-weight: 500;
+  color: #040404;
+}
+
+.title-about-us {
+  font-size: 40px;
+  font-weight: normal;
+  color: #060606;
+}
+
+.btn-hero {
+  background-color: aqua;
+  padding: 12px 24px;
+  border: 1px solid yellow;
+  border-radius: 8px;
+}
+
+.error .btn-form {
+  background-color: grey;
+}
+
+.btn-hero, .btn-comments {
+  margin-bottom: 8px;
+}
+
+.btn-comments {
+  background-color: #257e7e;
+  padding: 12px 24px 12px 40px;
+  border: none;
+  border-radius: 12px;
+}
+
+.btn-hero {
+  background-color: aqua;
+  padding: 12px 24px;
+  border: 1px solid yellow;
+  border-radius: 8px;
+}
+
+.my-test-class {
+  letter-spacing: 0.0210526316em;
+}
+
 /*HEADER-START*/
 .header__nav {
   background-color: #171717;
   border-radius: 50px;
 }
 .header__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   gap: 10px;
   padding: 10px;
 }
@@ -213,3 +258,10 @@ address {
 }
 
 /*HEADER-END*/
+.btn-primary {
+  background-color: #f0f0f0;
+}
+
+.btn-primary {
+  background-color: #e8e8e8;
+}

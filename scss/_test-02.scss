@@ -1,0 +1,144 @@
+$map-name: (
+  key1: value1,
+  key2: value2,
+  key3: value3,
+);
+
+$value: map-get($map-name, key1);
+
+$bgc-colors: (
+  primary: #040404,
+  secondary: #e7e7e7,
+);
+
+.test-map-use {
+  background-color: map-get($bgc-colors, primary);
+}
+
+.test-map-use-02 {
+  background-color: map-get($bgc-colors, secondary);
+}
+
+$type: matador;
+
+.test-if {
+  @if $type == ocean {
+    color: blue;
+  } @else if $type == matador {
+    color: red;
+  } @else if $type == monster {
+    color: green;
+  } @else {
+    color: black;
+  }
+}
+
+@mixin colorize($type) {
+  @if $type == ocean {
+    color: blue;
+  } @else if $type == matador {
+    color: red;
+  } @else if $type == monster {
+    color: green;
+  } @else {
+    color: black;
+  }
+}
+
+p {
+  @include colorize(ocean);
+}
+
+@mixin title($title) {
+  @if $title == h1 {
+    font-size: 64px;
+    font-weight: 500;
+    color: #040404;
+  } @else if $title == h2 {
+    font-size: 40px;
+    font-weight: normal;
+    color: #060606;
+  } @else if $title == h3 {
+    font-size: 28px;
+    font-weight: normal;
+    color: #060606;
+  } @else {
+    @error "Unknown title: use existing title";
+    font-size: 40px;
+    font-weight: normal;
+    color: #060606;
+  }
+}
+
+.title-hero {
+  @include title(h1);
+}
+
+.title-about-us {
+  @include title(h2);
+}
+
+@mixin btn($btn-style) {
+  @if $btn-style == primary {
+    background-color: aqua;
+    padding: 12px 24px;
+    border: 1px solid yellow;
+    border-radius: 8px;
+  } @else if $btn-style == secondary {
+    background-color: #257e7e;
+    padding: 12px 24px 12px 40px;
+    border: none;
+    border-radius: 12px;
+  } @else if $btn-style == error {
+    background-color: grey;
+  }
+}
+
+.btn-hero {
+  @include btn(primary);
+}
+
+.error .btn-form {
+  @include btn(error);
+}
+
+@for $i from 1 through 12 {
+  %col-#{$i} {
+    width: #{($i / 12) * 100%};
+  }
+}
+
+@for $i from 1 through 6 {
+  %m-#{$i} {
+    margin: #{$i * 4px};
+  }
+}
+
+@for $i from 1 through 6 {
+  %m-b#{$i} {
+    margin-bottom: #{$i * 4px};
+  }
+}
+
+.btn-comments {
+  @include btn(secondary);
+  @extend %m-b2;
+}
+
+.btn-hero {
+  @include btn(primary);
+  @extend %m-b2;
+}
+
+@function px-to-em($px, $base-font-size: 16px) {
+  @if not unitless($px) or not unitless($base-font-size) {
+    $px: strip-unit($px);
+    $base-font-size: strip-unit($base-font-size);
+  }
+
+  @return ($px / $base-font-size) * 1em;
+}
+
+.my-test-class {
+  letter-spacing: px-to-em(0.8, 38);
+}
