@@ -1,0 +1,27 @@
+.btn-hero-map-test {
+  background-color: map-get($btn-color-map, secondary);
+}
+
+@each $key, $color in $btn-color-map {
+  .btn-#{$key} {
+    background-color: $color;
+  }
+}
+
+@each $media, $size in $media-map {
+  .wrapper-#{$media} {
+    @media (min-width: $size) {
+      width: #{$size + 3px};
+    }
+  }
+}
+
+@each $animal, $color, $cursor in (puma, black, default),
+  (sea-slug, blue, pointer), (egret, white, move)
+{
+  .#{$animal}-icon {
+    background-image: url('/images/#{$animal}.png');
+    border: 2px solid $color;
+    cursor: $cursor;
+  }
+}

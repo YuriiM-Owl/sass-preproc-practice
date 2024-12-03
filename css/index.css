@@ -277,3 +277,61 @@ p {
 .btn-primary {
   background-color: #e8e8e8;
 }
+
+.btn-hero-map-test {
+  background-color: #e2e21e;
+}
+
+.btn-primary {
+  background-color: blue;
+}
+
+.btn-secondary {
+  background-color: #e2e21e;
+}
+
+.btn-error {
+  background-color: red;
+}
+
+@media (min-width: 365px) {
+  .wrapper-sm {
+    width: 368px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper-md {
+    width: 771px;
+  }
+}
+
+@media (min-width: 1160px) {
+  .wrapper-lg {
+    width: 1163px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .wrapper-xl {
+    width: 1923px;
+  }
+}
+
+.puma-icon {
+  background-image: url("/images/puma.png");
+  border: 2px solid black;
+  cursor: default;
+}
+
+.sea-slug-icon {
+  background-image: url("/images/sea-slug.png");
+  border: 2px solid blue;
+  cursor: pointer;
+}
+
+.egret-icon {
+  background-image: url("/images/egret.png");
+  border: 2px solid white;
+  cursor: move;
+}

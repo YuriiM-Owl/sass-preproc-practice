@@ -1,3 +1,16 @@
 $ff-lufga: 'Lufga', 'Arial', sans-serif;
 $ff-urbanist: 'Urbanist', 'Arial', sans-serif;
 $ff-inter: 'Inter', 'Arial', sans-serif;
+
+$btn-color-map: (
+  primary: blue,
+  secondary: #e2e21e,
+  error: red,
+);
+
+$media-map: (
+  sm: 365px,
+  md: 768px,
+  lg: 1160px,
+  xl: 1920px,
+);
